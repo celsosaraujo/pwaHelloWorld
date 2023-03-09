@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+}
+
+/* Preencher o conteúdo na área inteira da janela do navegador*/
+html,
+.fullscreen {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Centralizar o conteúdo na janela do navegador*/
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+}
