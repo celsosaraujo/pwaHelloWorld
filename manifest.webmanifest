@@ -1,8 +1,15 @@
 {
   "name": "Olá Mundo!!!!",
   "short_name": "Ola",
-  "icons": [{
-    "src": "images/ola-mundo-128.png",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#000000",
+  "background-color": "#000000",
+  "description": "Página de Hello World!",
+  "icons": [
+    {
+      "src": "images/ola-mundo-128.png",
       "sizes": "128x128",
       "type": "image/png"
     }, {
@@ -18,9 +25,6 @@
       "sizes": "512x512",
       "type": "image/png"
     }],
-  "lang": "pt-BR",
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "white",
-  "theme_color": "white"
+  "lang": "pt-BR" 
+  
 }
