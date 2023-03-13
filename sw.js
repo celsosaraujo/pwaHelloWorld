@@ -1,9 +1,10 @@
-var cacheName = 'ola-pwa';
+const cacheName = 'ola-pwa';
 var filesToCache = [
-  '/',
-  '/index.html',
-  '/css/style.css',
-  '/js/main.js'
+  './',
+  './manifest.webmanifest',
+  './index.html',
+  './css/style.css',
+  './js/main.js'
 ];
 
 /* Inicia o Service Worker e armazene em cache o conteúdo do aplicativo*/
