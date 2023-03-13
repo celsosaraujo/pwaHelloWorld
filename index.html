@@ -1,24 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <title>Olá Mundo</title>
+
+  <!-- associar um arquivo de manifesto da web (Web App Manifest) a uma página HTML -->
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/style.css">  
   <link rel="icon" href="ola-mundo-32.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="images/ola-mundo-128.png">
+
+  <!--controla a maneira como o navegador renderiza o conteúdo em dispositivos móveis -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <!--finir a cor do tema de um site em dispositivos móveis com o sistema operacional Android.-->
   <meta name="theme-color" content="white"/>
+
+  <!--fornecer um ícone personalizado para dispositivos iOS, como iPhones e iPads, quando um usuário adiciona o site à tela inicial do dispositivo. -->
+  <link rel="apple-touch-icon" href="images/ola-mundo-128.png">
+
+  <!--indicar ao navegador Safari em dispositivos iOS que o site pode ser executado em modo de aplicativo da web.-->
   <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!--definir o estilo da barra de status em um aplicativo da web em tela cheia no Safari em dispositivos iOS.-->
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!--definir o título do aplicativo da web em tela cheia no Safari em dispositivos iOS.-->
   <meta name="apple-mobile-web-app-title" content="Olá Mundo">
+
+  <!--especificar a imagem que será usada como ícone da tela inicial do site no Microsoft Edge e outros aplicativos do Windows.-->
   <meta name="msapplication-TileImage" content="images/ola-mundo-128.png">
+
+  <!--especificar a cor de fundo do ícone da tela inicial do site no Microsoft Edge e outros aplicativos do Windows.-->
   <meta name="msapplication-TileColor" content="#FFFFFF">
 </head>
 <body class="fullscreen">
   <div class="container">
     <h1 class="title">Olá Mundo!!!</h1>
   </div>
+
+  <!-- carregar um arquivo JavaScript externo chamado "main.js" no documento HTML atual. -->
   <script src="js/main.js"></script>
 </body>
 </html>
