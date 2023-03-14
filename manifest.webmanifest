@@ -15,7 +15,8 @@
     }, {
       "src": "images/ola-mundo-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }, {
       "src": "images/ola-mundo-256.png",
       "sizes": "256x256",
