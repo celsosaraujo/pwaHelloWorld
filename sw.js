@@ -25,3 +25,13 @@ self.addEventListener('fetch', function(e) {
     })
   );
 });
+
+self.addEventListener('push', event => {
+  console.log('Push received:', event);
+  event.waitUntil(
+    self.registration.showNotification('Título da notificação', {
+      body: 'Corpo da notificação',
+      icon: 'ícone-da-notificação.png'
+    })
+  );
+});
