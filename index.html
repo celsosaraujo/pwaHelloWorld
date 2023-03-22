@@ -39,6 +39,7 @@
 <body class="fullscreen">
   <div class="container">
     <h1 class="title">Olá Mundo (PWA com Push)!!!</h1>
+    <button id="btn-notificacao">Ativar Notificações</button>
   </div>
 
   <!-- carregar um arquivo JavaScript externo chamado "main.js" no documento HTML atual. -->
@@ -68,6 +69,22 @@
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
   </script>
+
+<script>
+  const btnNotificacao = document.querySelector('#btn-notificacao');
+
+  btnNotificacao.addEventListener('click', function() {
+    if (Notification.permission !== "granted") {
+      Notification.requestPermission().then(function (permission) {
+        if (permission === "granted") {
+          // permissão concedida, agora podemos enviar notificações
+        }
+      });
+    } else {
+      // permissão já concedida, podemos enviar notificações
+    }
+  });
+</script>
 
 </body>
 

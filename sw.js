@@ -30,8 +30,8 @@ self.addEventListener('push', event => {
   console.log('Push received:', event);
   event.waitUntil(
     self.registration.showNotification('Título da notificação', {
-      body: 'Corpo da notificação',
-      icon: 'ícone-da-notificação.png'
+      body: data.body,
+      icon: 'icon.png'
     })
   );
 });
